@@ -1,5 +1,6 @@
 # Manage .env configuration files
 
+Forked from [spy/puppet-dotenv](https://github.com/ratbox/puppet-dotenv)
 #### Table of Contents
 
 1. [Description](#description)
@@ -109,7 +110,8 @@ The `dotenv` defined type is a wrapper around the `file` resource type and imple
 ## Credits
 
 The `dotenv` function is a stripped down version of the `hash2kv` function from the [mmckinst/hash2stuff](https://forge.puppet.com/mmckinst/hash2stuff)
-module by [Mark McKinstry](https://forge.puppet.com/mmckinst).
+module by [Mark McKinstry](https://forge.puppet.com/mmckinst).  
+This module was initialy created by [Ratbox](https://github.com/ratbox/).  
 
 ## License
 

@@ -1,4 +1,12 @@
 # @summary dotenv defined type
+# @param entries Specifies the key value pairs for the dotenv file
+# @param ensure Whether the file should exist or not.
+# @param path Path for the file to be created
+# @param force Perform the file operation even if it will destroy one or more directories.  
+# @param mode The desired permissions mode for the file, in symbolic or numeric notation. 
+# This value must be specified as a string; do not use un-quoted numbers to represent file modes.
+# @param owner The user to whom the file should belong. Argument can be a user name or a user ID.
+# @param group Which group should own the file. Argument can be either a group name or a group ID.
 #
 # Defined file-like type to manage .env files
 #
@@ -13,6 +21,7 @@
 #     },
 #   }
 
+# dotenv defined type
 define dotenv (
   Hash                       $entries,
   Enum['present', 'absent']  $ensure  = 'present',

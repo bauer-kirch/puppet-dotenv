@@ -1,16 +1,16 @@
 {
-  "name": "spy-dotenv",
-  "version": "1.0.1",
+  "name": "bauerkirch-dotenv",
+  "version": "1.0.2",
   "author": "spy",
   "summary": "Manage .env configuration files",
   "license": "Apache-2.0",
-  "source": "https://github.com/ratbox/puppet-dotenv",
-  "project_page": "https://github.com/ratbox/puppet-dotenv",
-  "issues_url": "https://github.com/ratbox/puppet-dotenv/issues",
+  "source": "https://github.com/bauer-kirch/puppet-dotenv",
+  "project_page": "https://github.com/bauer-kirch/puppet-dotenv",
+  "issues_url": "https://github.com/bauer-kirch/puppet-dotenv/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 5.0.0 < 9.0.0"
+      "version_requirement": ">= 5.0.0 < 9.2.0"
     }
   ],
   "operatingsystem_support": [
@@ -41,13 +41,18 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "9"
+        "9",
+        "10",
+        "11",
+        "12"
       ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "18.04"
+        "18.04",
+        "20.04",
+        "22.04"
       ]
     },
     {
@@ -85,10 +90,10 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.10.0 < 7.0.0"
+      "version_requirement": ">= 4.10.0 < 9.0.0"
     }
   ],
-  "pdk-version": "1.15.0",
-  "template-url": "pdk-default#1.15.0",
-  "template-ref": "tags/1.15.0-0-g0bc522e"
+  "pdk-version": "3.0.0",
+  "template-url": "pdk-default#3.0.0",
+  "template-ref": "tags/3.0.0-0-g056e50d"
 }
