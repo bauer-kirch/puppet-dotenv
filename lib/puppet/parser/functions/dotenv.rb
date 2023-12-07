@@ -4,8 +4,7 @@ module Puppet::Parser::Functions
   newfunction(:dotenv, type: :rvalue, doc: <<-EOS
 Convert a Puppet hash into a dotenv-format file contents string
 EOS
-             ) do |argv|
-
+  ) do |argv|
     if argv.empty? || !argv[0].is_a?(Hash)
       raise(Puppet::ParseError, 'dotenv(): requires a hash argument')
     end
